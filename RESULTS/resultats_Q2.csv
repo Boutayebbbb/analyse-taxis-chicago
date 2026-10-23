@@ -1,0 +1,2 @@
+n_courses,r_PL,r_PD,r_LD,reg_PL_b0,reg_PL_b1,R2_PL,reg_PD_b0,reg_PD_b1,R2_PD,reg_multi_b0,reg_multi_bL,reg_multi_bD,R2_multi,RMSE_multi
+975939,0.8448,0.7143,0.6587,9.7313,2.4299,0.7137,8.1214,0.015359,0.5102,5.4488,1.9017,0.005994,0.7576,9.8634

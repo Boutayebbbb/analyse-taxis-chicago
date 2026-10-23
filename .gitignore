@@ -1,0 +1,16 @@
+# Fichiers générés par le pipeline (recréés par run_all.py)
+DATA/chicago_taxi_raw.csv
+DATA/chicago_taxi_clean.csv
+DATA/chicago_taxi_train.csv
+DATA/chicago_taxi_test.csv
+
+# LaTeX
+REP/latex/*.aux
+REP/latex/*.log
+REP/latex/*.out
+REP/latex/*.toc
+REP/latex/*.pdf
+
+__pycache__/
+*.pyc
+.DS_Store
