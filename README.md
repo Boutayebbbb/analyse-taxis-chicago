@@ -14,12 +14,12 @@ Trois questions sont traitées sur le prix **P**, la durée **D** et la distance
 
 | Variable | Moyenne 2013-2020 | Moyenne 2021 | Variation | t | d de Cohen |
 | --- | --- | --- | --- | --- | --- |
-| Prix P ($) | 29,04 | 34,51 | +18,8 % | 87,05 | 0,28 |
+| Prix P (USD) | 29,04 | 34,51 | +18,8 % | 87,05 | 0,28 |
 | Durée D (s) | 1 452,1 | 1 536,3 | +5,8 % | 32,47 | 0,09 |
 | Distance L (miles) | 8,34 | 9,54 | +14,4 % | 55,41 | 0,17 |
 
 H0 est rejetée pour les trois variables (confirmé par un test de Welch), mais les tailles d'effet sont faibles.
-**Analyse critique :** le prix moyen est passé de 19,79 $ en 2013 à 34,87 $ en 2019. Comparé à 2019, le prix de
+**Analyse critique :** le prix moyen est passé de 19,79 USD en 2013 à 34,87 USD en 2019. Comparé à 2019, le prix de
 2021 est quasiment inchangé (−1,0 %, d = −0,02) : la hausse reflète la **tendance de long terme** et non un
 effet propre à 2021. Le seul changement notable en 2021 est une durée plus courte à distance égale (−6,6 %).
 
@@ -31,14 +31,14 @@ effet propre à 2021. Le seul changement notable en 2021 est une durée plus cou
 | P ~ D | P = 8,12 + 0,01536 · D | 0,510 |
 | **P ~ L + D** | **P = 5,45 + 1,902 · L + 0,005994 · D** | **0,758** |
 
-Corrélations : r(P, L) = 0,845 ; r(P, D) = 0,714. La distance est le facteur dominant (≈ 1,90 $/mile),
-la durée ajoute une tarification à l'attente (≈ 0,36 $/min).
+Corrélations : r(P, L) = 0,845 ; r(P, D) = 0,714. La distance est le facteur dominant (≈ 1,90 USD/mile),
+la durée ajoute une tarification à l'attente (≈ 0,36 USD/min).
 
 ### Q3 — Plages horaires (ANOVA + Bonferroni)
 
 - ANOVA : F = 1 936,64, p ≈ 0, mais **η² = 0,0098** : l'heure explique moins de 1 % de la variance du prix.
 - Plage de pointe en volume : **[16h-20h[** (254 812 courses, 26,1 %).
-- Prix moyen maximal : [12h-16h[ (32,95 $) ; minimal : [00h-04h[ (24,69 $).
+- Prix moyen maximal : [12h-16h[ (32,95 USD) ; minimal : [00h-04h[ (24,69 USD).
 - Post-hoc de Bonferroni (Welch) : **14 paires sur 15** significatives ; [08h-12h[ et [16h-20h[ ont des prix identiques.
 - r(P, plage) = 0,032 : relation non monotone, d'où le choix de l'ANOVA.
 
@@ -46,8 +46,8 @@ la durée ajoute une tarification à l'attente (≈ 0,36 $/min).
 
 - **Fusion** des 11 fichiers annuels avec conversion du séparateur décimal (virgule → point).
 - **Nettoyage** : suppression des valeurs manquantes ou nulles, puis filtres de plausibilité
-  (P ≥ 3,25 $, D ≥ 60 s, L ≥ 0,1 mile, vitesse ≤ 80 mph). Les bornes basses de la méthode IQR étant négatives,
-  ces filtres sont nécessaires pour éliminer les erreurs de saisie (prix de 0,01 $, courses d'une seconde).
+  (P ≥ 3,25 USD, D ≥ 60 s, L ≥ 0,1 mile, vitesse ≤ 80 mph). Les bornes basses de la méthode IQR étant négatives,
+  ces filtres sont nécessaires pour éliminer les erreurs de saisie (prix de 0,01 USD, courses d'une seconde).
 - **Outliers** : méthode IQR (k = 3) sur P, D et L.
 - **Tests** : t à un échantillon et de Welch, d de Cohen, ANOVA à un facteur avec η², post-hoc de Bonferroni
   (15 tests de Welch, p corrigée × 15), corrélation de Pearson, régressions simple et multiple.
