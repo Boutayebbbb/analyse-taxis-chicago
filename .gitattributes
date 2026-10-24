@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Le rapport LaTeX est de la documentation (statistiques de langage GitHub)
+REP/latex/** linguist-documentation
+*.tex linguist-documentation
